@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        .content {
+            position: relative;
+            right: 15px;
+            top: 20px; /* Adjust this value to move the whole content box */
+            width: 350px;
+            height: 400px;
+            z-index: 1;
+            border-radius: 10px;
+            background: linear-gradient(to right, #f3b776, #e5877e, #c3698f, #8365ad, #5a59b1);
+            border: 1px solid #FFFFFF;
+        }
+        .div1 {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+        }
+        .profile {
+            position: absolute;
+            top: -80px;
+            right: 45px;
+            width: 250px;
+            height: 250px;
+            border-radius: 100%;
+            box-shadow: 0 0 20px 5px #316D7D;
+        }
+        .profile img {
+            width: 100%;
+            height: 100%;
+            border-radius: 100%;
+        }
+        .div2 {
+            width: 100%;
+            height: 100px;
+            position: relative;
+            left: 65px;
+            color: black;
+        }
+        .border {
+            position: relative;
+            display: inline-block;
+            right: 45px;
+            bottom: 30px;
+            padding: 5px 10px;
+        }
+        .text {
+        	width: 100%;
+        	height: 100%;
+            position: relative;
+            top: -55px;
+            left: -1px;
+            color: white;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            bottom: 15px; /* Adjust this value to move the buttons up */
+            width: 100%;
+            border-radius: 0 0 10px 10px; 
+            overflow: hidden;
+        }
+        .buttons button {
+            flex: 1;
+            border: none;
+            padding: 15px 0;
+            font-size: 15px;
+            font-weight: bold;
+            background-color: #f5f5f5;
+            color: #333;
+            transition: background-color 0.3s ease;
+        }
+        .buttons button:hover {
+            background-color: #ccc;
+        }
+        .buttons button:focus {
+            outline: none;
+            background-color: #bbb;
+        }
+        .buttons button:not(:last-child) {
+            border-right: 1px solid #ddd; /* Add border between buttons */
+        }
+        .social {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            top: -45px; /* Adjust this value to move the social media buttons up */
+            padding: 5px;
+            font-size: 20px;
+        }
+        .social a {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            text-decoration: none;
+            margin: 0 10px;
+            border-radius: 50%;
+            color: white;
+            transition: opacity 0.3s ease;
+        }
+        .social a:hover {
+            opacity: 0.7;
+        }
+        .social-github {
+            background: #3B5998;
+        }
+        .social-linked {
+            background: #0077B5;
+        }
+        .social-call {
+            background: #0077B5;
+        }
+        .social-mail {
+            background: #0077B5;
+        }
+    </style>
+</head>
+<body>
+    <video class="video" autoplay muted loop>
+        <source src="E:\HTML\PROFILE CARD\mylivewallpapers-com-Sun-Rays-Torii-Gate-4K.mp4" type="video/mp4">
+    </video>
+    <div class="content">
+        <div class="div1">
+            <div class="profile">
+                <img src="E:\HTML\PROFILE CARD\2026.png" alt="Profile Image">
+            </div>
+        </div>
+        <div class="div2">
+            <h1><span class="border">Sai Satya Karthikeya</span></h1>
+            <h3><span class="text">"computer science student"</span></h3>
+        </div>
+        <div class="social"> 
+            <a href="#" class="social-mail"><i class="fa-solid fa-envelope"></i></a>
+            <a href="#" class="social-call"><i class="fa-solid fa-phone"></i></a>
+            <a href="#" class="social-linked"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="social-github"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <div class="buttons">
+            <button>ABOUT</button>
+            <button>EDUCATION</button>
+            <button>CONTACT</button>
+        </div>
+    </div>
+</body>
+</html>
