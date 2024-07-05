@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile Card</title>
-    <link rel="icon" type="image/png" href="2026.png">
+    <link rel="icon" type="image/png" href="2026.png"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body, html {
@@ -44,11 +44,11 @@
             height: 400px;
             z-index: 1;
             border-radius: 10px;
-            background: linear-gradient(135deg, #0b3954, #087e8b, #bfd7ea, #ff5a5f, #c81d25);
+            background: linear-gradient(135deg, rgba(77, 77, 255, 0.6), rgba(255, 77, 255, 0.6), rgba(255, 77, 77, 0.6));
             background-size: 400% 400%;
-            animation: gradientMove 3s ease infinite; /* Adjusted the speed */
+            animation: gradientMove 2s ease infinite;
             border: 1px solid #FFFFFF;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); /* Apply shadows */
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.8); /* Apply shadows */
         }
         .div1 {
             width: 100%;
@@ -74,7 +74,7 @@
             height: 100px;
             position: relative;
             left: 65px;
-            color: black;
+            color: white;
         }
         .border {
             position: relative;
@@ -82,6 +82,7 @@
             right: 45px;
             bottom: 30px;
             padding: 5px 10px;
+            color: #FFFFFF;
         }
         .text {
             width: 100%;
@@ -89,7 +90,7 @@
             position: relative;
             top: -55px;
             left: -1px;
-            color: white;
+            color: BLACK;
         }
         .buttons {
             display: flex;
@@ -138,7 +139,7 @@
             text-decoration: none;
             margin: 0 10px;
             border-radius: 50%;
-            color: white;
+            color: white; /* Keep icon color white */
             transition: opacity 0.3s ease;
         }
         .social a:hover {
