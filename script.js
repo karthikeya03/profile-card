@@ -1,8 +1,8 @@
-document.getElementById('about-btn').addEventListener('click', function() {
+function loadMainContent() {
     document.getElementById('main-content').innerHTML = `
         <div class="div1">
             <div class="profile">
-                <img src="2026.png" alt="Profile Image">
+                <img src="E:\\HTML\\PROFILE 2\\2026.png" alt="Profile Image">
             </div>
         </div>
         <div class="div2">
@@ -16,27 +16,60 @@ document.getElementById('about-btn').addEventListener('click', function() {
             <a href="https://github.com/karthikeya03" class="social-github"><i class="fa-brands fa-github"></i></a>
         </div>
     `;
-});
+    addMainButtonEventListeners();
+}
 
-document.getElementById('education-btn').addEventListener('click', function() {
-    document.getElementById('main-content').innerHTML = `
-        <div class="section">
-            <h2>Education</h2>
-            <p>Details about education...</p>
-            <p>Details about education...</p>
-            <p>Details about education...</p>
-            <p>Details about education...</p>
-            <p>Details about education...</p>
-           
-        </div>
-    `;
-});
+function addMainButtonEventListeners() {
+    document.getElementById('about-btn').addEventListener('click', function() {
+        document.getElementById('main-content').innerHTML = `
+            <div class="section">
+                <h2>Details</h2>
+                <p>Details about me...</p>
+                <p>Details about me...</p>
+                <p>Details about me...</p>
+                <p>Details about me...</p>
+                <p>Details about me...</p>
+                <button class="back-btn">Back</button>
+            </div>
+        `;
+        addBackButtonEventListener();
+    });
 
-document.getElementById('contact-btn').addEventListener('click', function() {
-    document.getElementById('main-content').innerHTML = `
-        <div class="section">
-            <h2>Contact</h2>
-            <p>Details about contact...</p>
-        </div>
-    `;
-});
+    document.getElementById('education-btn').addEventListener('click', function() {
+        document.getElementById('main-content').innerHTML = `
+            <div class="section">
+                <h2>Education</h2>
+                <p>Details about education...</p>
+                <p>Details about education...</p>
+                <p>Details about education...</p>
+                <p>Details about education...</p>
+                <p>Details about education...</p>
+                <button class="back-btn">Back</button>
+            </div>
+        `;
+        addBackButtonEventListener();
+    });
+
+    document.getElementById('contact-btn').addEventListener('click', function() {
+        document.getElementById('main-content').innerHTML = `
+            <div class="section">
+                <h2>Contact</h2>
+                <p>Details about contact...</p>
+                <p>Details about contact...</p>
+                <p>Details about contact...</p>
+                <p>Details about contact...</p>
+                <p>Details about contact...</p>
+                <button class="back-btn">Back</button>
+            </div>
+        `;
+        addBackButtonEventListener();
+    });
+}
+
+function addBackButtonEventListener() {
+    document.querySelector('.back-btn').addEventListener('click', loadMainContent);
+}
+
+// Initial setup
+loadMainContent();
+addMainButtonEventListeners();
