@@ -24,14 +24,13 @@ function addMainButtonEventListeners() {
         document.getElementById('main-content').innerHTML = `
             <div class="section">
                 <h2>Details</h2>
-                <p>As a Computer Science Engineering student, <br> I am dedicated to 
-                expanding my knowledge in new programming 
-                languages and exploring various technologies. <br><br>
-                Currently, I am focusing on objectively building my skills.
-                I have honed my expertise in web development and AWS Cloud development.
-                <br><br>
-                Additionally, I have acquired proficiency in programming 
-                languages such as C++ and Java.</p>
+               <p>As a Computer Science Engineering student, <br> 
+I am dedicated to expanding my knowledge of new programming languages
+and exploring various technologies. <br><br>
+Currently, I am focusing on objectively building my skills,
+honing my expertise in web development and AWS Cloud development.
+<br><br>
+Additionally, I have acquired proficiency in programming languages such as C++ and Java.</p>
                 <br>
                 <button class="back-btn">Back</button>
             </div>
