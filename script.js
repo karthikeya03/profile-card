@@ -11,7 +11,7 @@ function loadMainContent() {
         </div>
         <div class="social"> 
             <a href="https://mail.google.com/mail/?view=cm&fs=1&to=saisatyakarthikeya@gmail.com" class="social-mail"><i class="fa-solid fa-envelope"></i></a>
-            <a href="tel:+917013796123" class="social-call"><i class="fa-solid fa-phone"></i></a>
+            <a href="tel:+917013796123" class="social-call"><i class="fa-brands fa-whatsapp"></i></a>
             <a href="https://www.linkedin.com/in/saisatyakarthikeya" class="social-linked"><i class="fab fa-linkedin"></i></a>
             <a href="https://github.com/karthikeya03" class="social-github"><i class="fa-brands fa-github"></i></a>
         </div>
