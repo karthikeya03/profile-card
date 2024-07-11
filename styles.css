@@ -1,0 +1,180 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.content {
+    position: relative;
+    width: 350px;
+    height: 400px;
+    z-index: 1;
+    border-radius: 10px;
+    background: linear-gradient(135deg, rgba(77, 77, 255, 0.6), rgba(255, 77, 255, 0.6), rgba(255, 77, 77, 0.6));
+    background-size: 400% 400%;
+    animation: gradientMove 2s ease infinite;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.8); /* Apply shadows */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.div1 {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.profile {
+    position: absolute;
+    top: -80px;
+    right: 45px;
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    box-shadow: 0 0 20px 5px #316D7D;
+}
+
+.profile img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.div2 {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    left: 65px;
+    color: white;
+}
+
+.border {
+    position: relative;
+    display: inline-block;
+    right: 45px;
+    bottom: 30px;
+    padding: 5px 10px;
+    color: #FFFFFF;
+}
+
+.text {
+    width: 100%;
+    height: 100;
+    position: relative;
+    top: -55px;
+    left: -1px;
+    color: BLACK;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 0 0 10px 10px; 
+    overflow: hidden;
+    background-color: #f5f5f5; /* Add background color */
+}
+
+.buttons button {
+    flex: 1;
+    border: none;
+    padding: 5px 0; /* Increase padding */
+    font-size: 18px; /* Increase font size */
+    font-weight: bold;
+    background-color: #f5f5f5;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+.buttons button:hover {
+    background-color: #ccc;
+}
+
+.buttons button:focus {
+    outline: none;
+    background-color: #bbb;
+}
+
+.buttons button:not(:last-child) {
+    border-right: 1px solid #ddd; /* Add border between buttons */
+}
+
+
+.social {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -45px; /* Adjust this value to move the social media buttons up */
+    padding: 5px;
+    font-size: 20px;
+}
+
+.social a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 10px;
+    border-radius: 50%;
+    color: white; /* Keep icon color white */
+    transition: opacity 0.3s ease;
+}
+
+.social a:hover {
+    opacity: 0.7;
+}
+
+.social-github {
+    background: #3B5998;
+}
+
+.social-linked {
+    background: #0077B5;
+}
+
+.social-call {
+    background: #0077B5;
+}
+
+.social-mail {
+    background: #0077B5;
+}
+
+.section {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
