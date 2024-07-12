@@ -36,11 +36,11 @@ function addMainButtonEventListeners() {
     document.getElementById('education-btn').addEventListener('click', function() {
         document.getElementById('main-content').innerHTML = `
             <div class="section">
-                <h3>Education</h3>
-                <p><strong>High School Education</strong> - Sri Chaitanya School (2019 - 2020)</p>
-                <p><strong>Secondary Education</strong> - Sri Chaitanya Junior College (2020 - 2022)</p>
-                <p><strong>B.Tech in Computer Science Engineering</strong> - Aditya University (2022 - Present)</p>
-                <p><strong>Studying</strong> <span>various</span> <strong>aspects</strong> of <strong>Computer</strong> Science,
+                <h2>Education</h2>
+                &#9679;<strong> High School Education</strong> - Sri Chaitanya School (2019 - 2020) <br>
+                &#9679;<strong> Secondary Education</strong> - Sri Chaitanya Junior College (2020 - 2022)<br><br>
+                &#9679;<strong> B.Tech in Computer Science Engineering</strong> - Aditya University (2022 - Present)<br><br>
+                <strong>Studying</strong> <span>various</span> <strong>aspects</strong> of <strong>Computer</strong> Science,
                 <strong>Web Development</strong>, <span>Algorithms</span>,
                 <strong>Data Structures</strong>, <span>Software Engineering</span>,
                 and <strong>Machine Learning</strong>.</p>
