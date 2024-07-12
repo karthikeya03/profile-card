@@ -56,7 +56,7 @@ function addMainButtonEventListeners() {
                 <p>I'm open for any <strong>Suggestion</strong> or just to have a chat</p>
                 <div class="info-item">
                     <i class="fas fa-map-marker-alt"></i>
-                    <span><strong>Address:</strong></span> Surampalem &#9679; Andrapadesh &#9679; India </span>
+                    <span><strong>Address:<br><br></strong></span> &#9679; Surampalem &#9679; Andrapadesh &#9679; India </span>
                 </div> <br>
                 <div class="info-item">
                     <i class="fas fa-phone"></i>
