@@ -179,3 +179,43 @@ body, html {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
+
+.contact-info {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 350px;
+}
+
+.contact-info h2 {
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    margin-bottom: 20px;
+    color: #ccc;
+}
+
+.contact-info .info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-info .info-item i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.contact-info .info-item span {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.github-link {
+    color: #477D99; /* Replace with your desired color */
+    text-decoration: underline; /* This keeps the underline */
+}
+
