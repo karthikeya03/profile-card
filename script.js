@@ -11,9 +11,9 @@ function loadMainContent() {
         </div>
         <div class="social"> 
             <a href="https://mail.google.com/mail/?view=cm&fs=1&to=saisatyakarthikeya@gmail.com" class="social-mail"><i class="fa-solid fa-envelope"></i></a>
-          <a href="https://wa.me/+917013796123?text=Hello! I'm[Your%20Name],%20came%20across%20something%20interesting%20for%20you.%20Ping%20me%20back%20on%20WhatsApp!" class="social-call"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="tel:+917013796123" class="social-call"><i class="fa-brands fa-whatsapp" style="color: #fcf7f7;"></i></a>
             <a href="https://www.linkedin.com/in/saisatyakarthikeya" class="social-linked"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/karthikeya03" class="social-github"><i class="fa-brands fa-github"></i></a>
+            <a href="https://github.com/karthikeya03" class="social-github github-link"><i class="fa-brands fa-github"></i></a>
         </div>
     `;
     addMainButtonEventListeners();
@@ -24,48 +24,56 @@ function addMainButtonEventListeners() {
         document.getElementById('main-content').innerHTML = `
             <div class="section">
                 <h2>Details</h2>
-               <p>As a Computer Science Engineering student, <br> 
-I am dedicated to expanding my knowledge of new programming languages
-and exploring various technologies. <br><br>
-Currently, I am focusing on objectively building my skills,
-honing my expertise in web development and AWS Cloud development.
-<br><br>
-Additionally, I have acquired proficiency in programming languages such as C++ and Java.</p>
-                <br>
+                <p>As a <strong>Computer Science Engineering</strong> Student,<br>
+                I am dedicated to expanding my knowledge in new programming languages and exploring <strong>Various Technologies</strong>.<br><br>
+                Currently, I am focusing on objectively building my skills. I am honing my expertise in <strong>Web development</strong> and <strong>AWS Cloud development</strong>.<br><br>
+                Additionally, I have acquired proficiency in <strong>Programming</strong> languages such as <strong>C++</strong> and <strong>Java.</strong></p>
                 <button class="back-btn">Back</button>
-            </div>
-        `;
-        addBackButtonEventListener();
+            </div>`;
+        addBackButtonEventListener(); // Add back button listener after setting innerHTML
     });
 
     document.getElementById('education-btn').addEventListener('click', function() {
         document.getElementById('main-content').innerHTML = `
             <div class="section">
-                <h2>Education</h2>
-                <p>Details about education...</p>
-                <p>Details about education...</p>
-                <p>Details about education...</p>
-                <p>Details about education...</p>
-                <p>Details about education...</p>
+                <h3>Education</h3>
+                <p><strong>High School Education</strong> - Sri Chaitanya School (2019 - 2020)</p>
+                <p><strong>Secondary Education</strong> - Sri Chaitanya Junior College (2020 - 2022)</p>
+                <p><strong>B.Tech in Computer Science Engineering</strong> - Aditya University (2022 - Present)</p>
+                <p><strong>Studying</strong> <span>various</span> <strong>aspects</strong> of <strong>Computer</strong> Science,
+                <strong>Web Development</strong>, <span>Algorithms</span>,
+                <strong>Data Structures</strong>, <span>Software Engineering</span>,
+                and <strong>Machine Learning</strong>.</p>
                 <button class="back-btn">Back</button>
-            </div>
-        `;
-        addBackButtonEventListener();
+            </div>`;
+        addBackButtonEventListener(); // Add back button listener after setting innerHTML
     });
 
     document.getElementById('contact-btn').addEventListener('click', function() {
         document.getElementById('main-content').innerHTML = `
             <div class="section">
-                <h2>Contact</h2>
-                <p>Details about contact...</p>
-                <p>Details about contact...</p>
-                <p>Details about contact...</p>
-                <p>Details about contact...</p>
-                <p>Details about contact...</p>
+                <h2>Contact Information</h2>
+                <p>I'm open for any <strong>Suggestion</strong> or just to have a chat</p>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span><strong>Address:</strong></span> Surampalem &#9679; Andrapadesh &#9679; India </span>
+                </div> <br>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <strong>Phone:</strong> +91 7013796123 
+                </div><br>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <strong>Email:</strong> saisatyakarthikeya@gmail.com
+                </div> <br>
+                <div class="info-item">
+                    <i class="fas fa-globe"></i>
+                    <strong>Git Hub:</strong> <a href ="https://github.com/karthikeya03" class="github-link">/karthikeya03</a>
+                </div>
+                <br>
                 <button class="back-btn">Back</button>
-            </div>
-        `;
-        addBackButtonEventListener();
+            </div>`;
+        addBackButtonEventListener(); // Add back button listener after setting innerHTML
     });
 }
 
