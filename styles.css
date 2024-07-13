@@ -219,3 +219,21 @@ body, html {
     text-decoration: underline; /* This keeps the underline */
 }
 
+.styled-back-btn {
+    background-color: #316F7C; /* Green background */
+    border: none;             /* Remove borders */
+    color: white;             /* White text */
+    text-align: center;       /* Center text */
+    text-decoration: none;    /* Remove underline */
+    display: inline-block;    /* Get it to display properly */
+    font-size: 18px;          /* Increase font size */
+    cursor: pointer;          /* Pointer/hand icon */
+    border-radius: 12px;      /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.styled-back-btn:hover {
+    background-color: #A1BAB3;/* Background on hover */
+    color: #0D1C30;
+}
+
