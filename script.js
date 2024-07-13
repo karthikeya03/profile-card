@@ -78,7 +78,11 @@ function addMainButtonEventListeners() {
 }
 
 function addBackButtonEventListener() {
-    document.querySelector('.back-btn').addEventListener('click', loadMainContent);
+    const backButton = document.querySelector('.back-btn');
+    backButton.addEventListener('click', loadMainContent);
+
+    // Add CSS class for styling
+    backButton.classList.add('styled-back-btn');
 }
 
 // Initial setup
