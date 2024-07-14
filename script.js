@@ -2,7 +2,7 @@ function loadMainContent() {
     document.getElementById('main-content').innerHTML = `
         <div class="div1">
             <div class="profile">
-                <img src="2026.png" alt="Profile Image">
+                <img src="22P31A0506.png" alt="Profile Image">
             </div>
         </div>
         <div class="div2">
